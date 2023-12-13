@@ -1,0 +1,18 @@
+runtime: nodejs14
+instance_class: F2
+
+env_variables:
+  MYSQL_HOST: 'localhost'
+  MYSQL_USER: 'sandadi'
+  MYSQL_PASSWORD: 'Student$ub1'
+  MYSQL_DATABASE: 'sandadi'
+  MYSQL_PORT: '3306'
+  CLOUD_SQL_CONNECTION_NAME: 'dynamic-density-407719:us-central1:sandadi'
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  target_throughput_utilization: 0.65
+
+handlers:
+- url: /.*
+  script: auto

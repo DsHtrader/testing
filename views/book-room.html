@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Book a Room</title>
+</head>
+<body>
+  <h1>Welcome, <%= username %>!</h1>
+  <form action="/book-room" method="post">
+    <label for="room">Select a room:</label>
+    <select id="room" name="room" required>
+      <option value="room1">Room 1</option>
+      <option value="room2">Room 2</option>
+      <option value="room3">Room 3</option>
+    </select>
+    <button type="submit">Book Room</button>
+  </form>
+  <a href="/logout">Logout</a>
+</body>
+</html>
