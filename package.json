@@ -7,7 +7,10 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["library", "room booking"],
+  "keywords": [
+    "library",
+    "room booking"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "engines": {
